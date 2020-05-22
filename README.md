@@ -20,3 +20,21 @@ Rush must be installed globally.
    ```sh
    rush update
    ```
+
+## Performing a build
+
+```sh
+rush build
+```
+
+## Running unit tests
+
+```sh
+rush test
+```
+
+## Creating a new package
+
+```sh
+rush create-package --path libraries/new-package --name @scope/new-package
+```

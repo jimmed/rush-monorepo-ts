@@ -1,21 +1,23 @@
 {
-  "name": "@scope/toolchain",
+  "name": "@scope/create-package",
   "version": "1.0.0",
-  "description": "A toolchain used to build projects in this repo",
-  "private": true,
-  "bin": {
-    "build-ts": "./bin/build.js"
-  },
   "scripts": {
-    "build": "tsc",
+    "build": "build-ts",
     "test": "jest"
   },
   "devDependencies": {
+    "@scope/toolchain": "1.0.0",
     "@types/jest": "~25.2.1",
+    "@types/listr": "~0.14.2",
     "@types/node": "~13.13.5",
     "jest": "~25.5.4",
     "rimraf": "~3.0.2",
     "ts-jest": "~25.4.0",
     "typescript": "~3.8.3"
+  },
+  "dependencies": {
+    "listr": "~0.14.3",
+    "any-observable": "~0.5.1",
+    "rxjs": "~6.5.5"
   }
 }

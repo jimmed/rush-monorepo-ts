@@ -5,12 +5,18 @@
   "nodeSupportedVersionRange": ">=12.16.1 <13.0.0",
   "ensureConsistentVersions": true,
   "repository": {
-    "url": "https://github.com/jimmed/trashpanda"
+    "url": "https://github.com/jimmed/rush-monorepo-ts"
   },
   "projects": [
     {
       "packageName": "@scope/toolchain",
-      "projectFolder": "tools/toolchain"
+      "projectFolder": "tools/toolchain",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@scope/create-package",
+      "projectFolder": "tools/create-package",
+      "shouldPublish": false
     }
   ]
 }
