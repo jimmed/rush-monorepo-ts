@@ -1,9 +1,9 @@
 dependencies:
   '@rush-temp/create-package': 'file:projects/create-package.tgz'
   '@rush-temp/toolchain': 'file:projects/toolchain.tgz'
-  '@types/jest': 25.2.3
+  '@types/jest': 25.2.1
   '@types/listr': 0.14.2
-  '@types/node': 13.13.9
+  '@types/node': 13.13.5
   any-observable: 0.5.1
   jest: 25.5.4
   listr: 0.14.3
@@ -296,7 +296,7 @@ packages:
       camelcase: 5.3.1
       find-up: 4.1.0
       get-package-type: 0.1.0
-      js-yaml: 3.13.1
+      js-yaml: 3.14.0
       resolve-from: 5.0.0
     dev: false
     engines:
@@ -537,7 +537,7 @@ packages:
       integrity: sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
   /@types/graceful-fs/4.1.3:
     dependencies:
-      '@types/node': 13.13.9
+      '@types/node': 13.13.5
     dev: false
     resolution:
       integrity: sha512-AiHRaEB50LQg0pZmm659vNBb9f4SJ0qrAnteuzhSeAUcJKxoYgEnprg/83kppCnc2zvtCKbdZry1a5pVY3lOTQ==
@@ -558,24 +558,24 @@ packages:
     dev: false
     resolution:
       integrity: sha512-P/W9yOX/3oPZSpaYOCQzGqgCQRXn0FFO/V8bWrCQs+wLmvVVxk6CRBXALEvNs9OHIatlnlFokfhuDo2ug01ciw==
-  /@types/jest/25.2.3:
+  /@types/jest/25.2.1:
     dependencies:
       jest-diff: 25.5.0
       pretty-format: 25.5.0
     dev: false
     resolution:
-      integrity: sha512-JXc1nK/tXHiDhV55dvfzqtmP4S3sy3T3ouV2tkViZgxY/zeUkcpQcQPGRlgF4KmWzWW5oiWYSZwtCB+2RsE4Fw==
+      integrity: sha512-msra1bCaAeEdkSyA0CZ6gW1ukMIvZ5YoJkdXw/qhQdsuuDlFTcEUrUw8CLCPt2rVRUfXlClVvK2gvPs9IokZaA==
   /@types/listr/0.14.2:
     dependencies:
-      '@types/node': 13.13.9
+      '@types/node': 13.13.5
       rxjs: 6.5.5
     dev: false
     resolution:
       integrity: sha512-wCipMbQr3t2UHTm90LldVp+oTBj1TX6zvpkCJcWS4o8nn6kS8SN93oUvKJAgueIRZ5M36yOlFmScqBxYH8Ajig==
-  /@types/node/13.13.9:
+  /@types/node/13.13.5:
     dev: false
     resolution:
-      integrity: sha512-EPZBIGed5gNnfWCiwEIwTE2Jdg4813odnG8iNPMQGrqVxrI+wL68SPtPeCX+ZxGBaA6pKAVc6jaKgP/Q0QzfdQ==
+      integrity: sha512-3ySmiBYJPqgjiHA7oEaIo2Rzz0HrOZ7yrNO5HWyaE5q0lQ3BppDZ3N53Miz8bw2I7gh1/zir2MGVZBvpb1zq9g==
   /@types/normalize-package-data/2.4.0:
     dev: false
     resolution:
@@ -800,10 +800,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-tG6JCTSpWR8tL2+G1+ap8bP+dqg=
-  /aws4/1.9.1:
+  /aws4/1.10.0:
     dev: false
     resolution:
-      integrity: sha512-wMHVg2EOHaMRxbzgFJ9gtjOOCrI80OHLG14rxi28XwOW8ux6IiEbRCGGGqCtdAIg4FQCbW20k9RsT4y3gJlFug==
+      integrity: sha512-3YDiu347mtVtjpyV3u5kVqQLP242c06zwDOgpeRnybmXlYYsLbtTrUBUm8i8srONt+FWobl5aibnU1030PeeuA==
   /babel-jest/25.5.1/@babel!core@7.9.6:
     dependencies:
       '@babel/core': 7.9.6
@@ -2457,14 +2457,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
-  /js-yaml/3.13.1:
+  /js-yaml/3.14.0:
     dependencies:
       argparse: 1.0.10
       esprima: 4.0.1
     dev: false
     hasBin: true
     resolution:
-      integrity: sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==
+      integrity: sha512-/4IbIeHcD9VMHFqDR/gQ7EdZdLimOvW2DdcxFjdyyZ9NsbS+ccrXqVWDtab/lRl5AlUqmpBx8EhPaWR+OtY17A==
   /jsbn/0.1.1:
     dev: false
     resolution:
@@ -2623,17 +2623,6 @@ packages:
       listr: ^0.14.2
     resolution:
       integrity: sha512-tKRsZpKz8GSGqoI/+caPmfrypiaq+OQCbd+CovEC24uk1h952lVj5sC7SqyFUm+OaJ5HN/a1YLt5cit2FMNsFA==
-  /listr-update-renderer/0.5.0/listr@0.14.3:
-    dependencies:
-      listr: /listr/0.14.3/listr@0.14.3
-    dev: false
-    engines:
-      node: '>=6'
-    id: registry.npmjs.org/listr-update-renderer/0.5.0
-    peerDependencies:
-      listr: ^0.14.2
-    resolution:
-      integrity: sha512-tKRsZpKz8GSGqoI/+caPmfrypiaq+OQCbd+CovEC24uk1h952lVj5sC7SqyFUm+OaJ5HN/a1YLt5cit2FMNsFA==
   /listr-verbose-renderer/0.5.0:
     dependencies:
       chalk: 2.4.2
@@ -2659,15 +2648,6 @@ packages:
     dev: false
     engines:
       node: '>=6'
-    resolution:
-      integrity: sha512-RmAl7su35BFd/xoMamRjpIE4j3v+L28o8CT5YhAXQJm1fD+1l9ngXY8JAQRJ+tFK2i5njvi0iRUKV09vPwA0iA==
-  /listr/0.14.3/listr@0.14.3:
-    dependencies:
-      listr-update-renderer: /listr-update-renderer/0.5.0/listr@0.14.3
-    dev: false
-    engines:
-      node: '>=6'
-    id: registry.npmjs.org/listr/0.14.3
     resolution:
       integrity: sha512-RmAl7su35BFd/xoMamRjpIE4j3v+L28o8CT5YhAXQJm1fD+1l9ngXY8JAQRJ+tFK2i5njvi0iRUKV09vPwA0iA==
   /locate-path/5.0.0:
@@ -3271,7 +3251,7 @@ packages:
   /request/2.88.2:
     dependencies:
       aws-sign2: 0.7.0
-      aws4: 1.9.1
+      aws4: 1.10.0
       caseless: 0.12.0
       combined-stream: 1.0.8
       extend: 3.0.2
@@ -3881,6 +3861,31 @@ packages:
       typescript: '>=3.4 <4.0'
     resolution:
       integrity: sha512-+0ZrksdaquxGUBwSdTIcdX7VXdwLIlSRsyjivVA9gcO+Cvr6ByqDhu/mi5+HCcb6cMkiQp5xZ8qRO7/eCqLeyw==
+  /ts-jest/25.4.0/jest@25.5.4+typescript@3.8.3:
+    dependencies:
+      bs-logger: 0.2.6
+      buffer-from: 1.1.1
+      fast-json-stable-stringify: 2.1.0
+      jest: 25.5.4
+      json5: 2.1.3
+      lodash.memoize: 4.1.2
+      make-error: 1.3.6
+      micromatch: 4.0.2
+      mkdirp: 1.0.4
+      resolve: 1.17.0
+      semver: 6.3.0
+      typescript: 3.8.3
+      yargs-parser: 18.1.3
+    dev: false
+    engines:
+      node: '>= 8'
+    hasBin: true
+    id: registry.npmjs.org/ts-jest/25.4.0
+    peerDependencies:
+      jest: '>=25 <26'
+      typescript: '>=3.4 <4.0'
+    resolution:
+      integrity: sha512-+0ZrksdaquxGUBwSdTIcdX7VXdwLIlSRsyjivVA9gcO+Cvr6ByqDhu/mi5+HCcb6cMkiQp5xZ8qRO7/eCqLeyw==
   /tslib/1.13.0:
     dev: false
     resolution:
@@ -4159,34 +4164,34 @@ packages:
       integrity: sha512-92O1HWEjw27sBfgmXiixJWT5hRBp2eobqXicLtPBIDBhYB+1HpwZlXmbW2luivBJHBzki+7VyCLRtAkScbTBQA==
   'file:projects/create-package.tgz':
     dependencies:
-      '@types/jest': 25.2.3
+      '@types/jest': 25.2.1
       '@types/listr': 0.14.2
-      '@types/node': 13.13.9
+      '@types/node': 13.13.5
       any-observable: 0.5.1
       jest: 25.5.4
-      listr: /listr/0.14.3/listr@0.14.3
+      listr: 0.14.3
       rimraf: 3.0.2
       rxjs: 6.5.5
-      ts-jest: 25.4.0
+      ts-jest: /ts-jest/25.4.0/jest@25.5.4+typescript@3.8.3
       typescript: 3.8.3
     dev: false
     name: '@rush-temp/create-package'
     resolution:
-      integrity: sha512-6qaF5jz3PEhgNWuU7Apcnvu9XWFxms1mKcFOqYge+w1UWIBJVvPK+n4qvyYX5WPo27m4m1hejL9h0+hLkay87w==
+      integrity: sha512-EG5JE5ts5XGnzWOPI5FHo0FutbqG3UxjfzTwraSUpTNmxe4bpc+8t6a6XcnaTN0U/70MYyHGdFL1oM0hX+kzPQ==
       tarball: 'file:projects/create-package.tgz'
     version: 0.0.0
   'file:projects/toolchain.tgz':
     dependencies:
-      '@types/jest': 25.2.3
-      '@types/node': 13.13.9
+      '@types/jest': 25.2.1
+      '@types/node': 13.13.5
       jest: 25.5.4
       rimraf: 3.0.2
-      ts-jest: 25.4.0
+      ts-jest: /ts-jest/25.4.0/jest@25.5.4+typescript@3.8.3
       typescript: 3.8.3
     dev: false
     name: '@rush-temp/toolchain'
     resolution:
-      integrity: sha512-FRgSLJHjJeG51MdutMfJNrFpCOYwCGvy8RYrsiePWVNWovzTcdAD5FOnofOSfzytAeL8z3RmkFMBvLVfd2QRKg==
+      integrity: sha512-lFdiHWknf8SYBXIjtNuo56jIOC2VX2p8IzeIHEiXJFv8lMIRxUsdvZ9Y5izDvmUYVQ2Z1zijK0zDX8IDJczwFA==
       tarball: 'file:projects/toolchain.tgz'
     version: 0.0.0
 registry: 'https://registry.npmjs.org/'
@@ -4195,13 +4200,13 @@ shrinkwrapVersion: 3
 specifiers:
   '@rush-temp/create-package': 'file:./projects/create-package.tgz'
   '@rush-temp/toolchain': 'file:./projects/toolchain.tgz'
-  '@types/jest': ~25.2.1
-  '@types/listr': ~0.14.2
-  '@types/node': ~13.13.5
+  '@types/jest': 25.2.1
+  '@types/listr': 0.14.2
+  '@types/node': 13.13.5
   any-observable: ~0.5.1
-  jest: ~25.5.4
+  jest: 25.5.4
   listr: ~0.14.3
-  rimraf: ~3.0.2
+  rimraf: 3.0.2
   rxjs: ~6.5.5
-  ts-jest: ~25.4.0
-  typescript: ~3.8.3
+  ts-jest: 25.4.0
+  typescript: 3.8.3
