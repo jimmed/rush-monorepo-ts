@@ -7,6 +7,8 @@ dependencies:
   any-observable: 0.5.1
   jest: 25.5.4
   listr: 0.14.3
+  prettier: 2.0.5
+  pretty-quick: 2.0.1
   rimraf: 3.0.2
   rxjs: 6.5.5
   ts-jest: 25.4.0
@@ -572,6 +574,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-wCipMbQr3t2UHTm90LldVp+oTBj1TX6zvpkCJcWS4o8nn6kS8SN93oUvKJAgueIRZ5M36yOlFmScqBxYH8Ajig==
+  /@types/minimatch/3.0.3:
+    dev: false
+    resolution:
+      integrity: sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
   /@types/node/13.13.5:
     dev: false
     resolution:
@@ -751,16 +757,34 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-45sJrqne+Gao8gbiiK9jkZuuOcQ=
+  /array-differ/3.0.0:
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-THtfYS6KtME/yIAhKjZ2ul7XI96lQGHRputJQHO80LAWQnuGP4iCIN8vdMRboGbIEYBwU33q8Tch1os2+X0kMg==
   /array-equal/1.0.0:
     dev: false
     resolution:
       integrity: sha1-jCpe8kcv2ep0KwTHenUJO6J1fJM=
+  /array-union/2.1.0:
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-HGyxoOTYUyCM6stUe6EJgnd4EoewAI7zMdfqO+kGjnlZmBDz/cR5pf8r/cR4Wq60sL/p0IkcjUEEPwS3GFrIyw==
   /array-unique/0.3.2:
     dev: false
     engines:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-qJS3XUvE9s1nnvMkSp/Y9Gri1Cg=
+  /arrify/2.0.1:
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-3duEwti880xqi4eAMN8AyR4a0ByT90zoYdLlevfrvU43vb0YZwZVfxOgxWrLXXXpyugL0hNZc9G6BiB5B3nUug==
   /asn1/0.2.4:
     dependencies:
       safer-buffer: 2.1.2
@@ -1379,6 +1403,22 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-adbxcyWV46qiHyvSp50TKt05tB4tK3HcmF7/nxfAdhnox83seTDbwnaqKO4sXRy7roHAIFqJP/Rw/AuEbX61LA==
+  /execa/2.1.0:
+    dependencies:
+      cross-spawn: 7.0.2
+      get-stream: 5.1.0
+      is-stream: 2.0.0
+      merge-stream: 2.0.0
+      npm-run-path: 3.1.0
+      onetime: 5.1.0
+      p-finally: 2.0.1
+      signal-exit: 3.0.3
+      strip-final-newline: 2.0.0
+    dev: false
+    engines:
+      node: ^8.12.0 || >=9.7.0
+    resolution:
+      integrity: sha512-Y/URAVapfbYy2Xp/gb6A0E7iR8xeqOCXsuuaoMn7A5PzrXUK84E1gyiEfq0wQd/GHA6GsoHWwhNq8anb0mleIw==
   /execa/3.4.0:
     dependencies:
       cross-spawn: 7.0.2
@@ -1762,6 +1802,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==
+  /ignore/5.1.6:
+    dev: false
+    engines:
+      node: '>= 4'
+    resolution:
+      integrity: sha512-cgXgkypZBcCnOgSihyeqbo6gjIaIyDqPQB7Ra4vhE9m6kigdGoQDMHjviFhRZo3IMlRy6yElosoviMs5YxZXUA==
   /import-local/3.0.2:
     dependencies:
       pkg-dir: 4.2.0
@@ -2811,6 +2857,12 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
+  /mri/1.1.5:
+    dev: false
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha512-d2RKzMD4JNyHMbnbWnznPaa8vbdlq/4pNZ3IgdaGrVbBhebBsGUUE/6qorTMYNS6TwuH3ilfOlD2bf4Igh8CKg==
   /ms/2.0.0:
     dev: false
     resolution:
@@ -2819,6 +2871,18 @@ packages:
     dev: false
     resolution:
       integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
+  /multimatch/4.0.0:
+    dependencies:
+      '@types/minimatch': 3.0.3
+      array-differ: 3.0.0
+      array-union: 2.1.0
+      arrify: 2.0.1
+      minimatch: 3.0.4
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-lDmx79y1z6i7RNx0ZGCPq1bzJ6ZoDDKbvh7jxr9SJcWLkShMzXrHbYVpTdnhNM5MXpDUxCQ4DgqVttVXlBgiBQ==
   /nanomatch/1.2.13:
     dependencies:
       arr-diff: 4.0.0
@@ -2897,6 +2961,14 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-NakjLfo11wZ7TLLd8jV7GHFTbF8=
+  /npm-run-path/3.1.0:
+    dependencies:
+      path-key: 3.1.1
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-Dbl4A/VfiVGLgQv29URL9xshU8XDY1GeLy+fsaZ1AA8JDSfjvr5P5+pzRbWqRSBxk6/DW7MIh8lTM/PaGnP2kg==
   /npm-run-path/4.0.1:
     dependencies:
       path-key: 3.1.1
@@ -3123,6 +3195,13 @@ packages:
       node: '>= 0.8.0'
     resolution:
       integrity: sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
+  /prettier/2.0.5:
+    dev: false
+    engines:
+      node: '>=10.13.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-7PtVymN48hGcO4fGjybyBSIWDsLU4H4XlvOHfq91pz9kkGlonzwTfYkaIEwiRg/dAJF9YlbsduBAgtYLi+8cFg==
   /pretty-format/25.5.0:
     dependencies:
       '@jest/types': 25.5.0
@@ -3134,6 +3213,22 @@ packages:
       node: '>= 8.3'
     resolution:
       integrity: sha512-kbo/kq2LQ/A/is0PQwsEHM7Ca6//bGPPvU6UnsdDRSKTWxT/ru/xb88v4BJf6a69H+uTytOEsTusT9ksd/1iWQ==
+  /pretty-quick/2.0.1:
+    dependencies:
+      chalk: 2.4.2
+      execa: 2.1.0
+      find-up: 4.1.0
+      ignore: 5.1.6
+      mri: 1.1.5
+      multimatch: 4.0.0
+    dev: false
+    engines:
+      node: '>=8'
+    hasBin: true
+    peerDependencies:
+      prettier: '>=1.8.0'
+    resolution:
+      integrity: sha512-y7bJt77XadjUr+P1uKqZxFWLddvj3SKY6EU4BuQtMxmmEFSMpbN132pUWdSG1g1mtUfO0noBvn7wBf0BVeomHg==
   /prompts/2.3.2:
     dependencies:
       kleur: 3.0.3
@@ -4164,20 +4259,15 @@ packages:
       integrity: sha512-92O1HWEjw27sBfgmXiixJWT5hRBp2eobqXicLtPBIDBhYB+1HpwZlXmbW2luivBJHBzki+7VyCLRtAkScbTBQA==
   'file:projects/create-package.tgz':
     dependencies:
-      '@types/jest': 25.2.1
       '@types/listr': 0.14.2
       '@types/node': 13.13.5
       any-observable: 0.5.1
-      jest: 25.5.4
       listr: 0.14.3
-      rimraf: 3.0.2
       rxjs: 6.5.5
-      ts-jest: /ts-jest/25.4.0/jest@25.5.4+typescript@3.8.3
-      typescript: 3.8.3
     dev: false
     name: '@rush-temp/create-package'
     resolution:
-      integrity: sha512-EG5JE5ts5XGnzWOPI5FHo0FutbqG3UxjfzTwraSUpTNmxe4bpc+8t6a6XcnaTN0U/70MYyHGdFL1oM0hX+kzPQ==
+      integrity: sha512-H40IjCodwYamhsVreyYiz31mn++SASySVuVXR+iZV7RrcIUH/4qjbc3ae8jQl/1A1xx39Wrw3/ekoi9DCt28qQ==
       tarball: 'file:projects/create-package.tgz'
     version: 0.0.0
   'file:projects/toolchain.tgz':
@@ -4206,6 +4296,8 @@ specifiers:
   any-observable: ~0.5.1
   jest: 25.5.4
   listr: ~0.14.3
+  prettier: 2.0.5
+  pretty-quick: 2.0.1
   rimraf: 3.0.2
   rxjs: ~6.5.5
   ts-jest: 25.4.0
