@@ -1,6 +1,7 @@
 import * as Listr from "listr";
 import { promises as fs } from "fs";
 import { resolve } from "path";
+import { URL } from "url";
 
 const flags = ["path", "name"];
 const { path, name } = process.argv.reduce((o, arg, i, l) => {
@@ -32,7 +33,7 @@ new Listr([
   },
   {
     title: "Create package.json",
-    task: () =>
+    task: (ctx) =>
       fs.writeFile(
         resolve(packageDir, "package.json"),
         JSON.stringify(
@@ -40,6 +41,11 @@ new Listr([
             name,
             version: "1.0.0",
             scripts: { build: "build-ts", test: "jest" },
+            repository: {
+              type: "git",
+              url: ctx.rush.repository.url + ".git",
+              directory: path,
+            },
             devDependencies: {
               "@scope/toolchain": "1.0.0",
               "@types/jest": "~25.2.1",
